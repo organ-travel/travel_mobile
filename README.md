@@ -1,4 +1,4 @@
-# travel_sx
+# travel_mobile
 
 ## Project setup
 ```

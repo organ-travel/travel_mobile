@@ -1,0 +1,27 @@
+px($val) {
+  1rem * ($val / 20)
+}
+ellipsis($val) {
+  text-overflow: -o-ellipsis-lastline
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: $val
+  -webkit-box-orient: vertical
+}
+prem($val) {
+  1rem * ($val / 9.6)
+}
+clearfix() {
+  .clearfix {
+    *zoom: 1
+  }
+  .clearfix:after {
+    content: ''
+    display: block
+    line-height: 0
+    height: 0
+    visibility: hidden
+    clear: both
+  }
+}

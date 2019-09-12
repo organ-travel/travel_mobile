@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <com-header></com-header>
+    <com-content></com-content>
+    <van-button type="primary">测试vant</van-button>
+    <p style="height: 2rem"></p>
+    <mt-button type="default">测试mint-ui</mt-button>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { Button } from 'mint-ui'
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    HelloWorld
+    MtButton: Button
+  },
+  computed: {
+  },
+  mounted () {
+    console.log('home mounted', this.activeIndex)
   }
 }
 </script>
+<style lang="stylus" scoped>
+@import '~@/assets/style/base.styl'
+</style>
